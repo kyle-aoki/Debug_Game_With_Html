@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>The Debug Game</title>
+    <link rel="stylesheet" href="Debug_Game.css">
+    <script src="Debug_Game.js"></script>
+</head>
+
+<body>
+  
+    <div id="Game_Container">
+        <div id="Score">Score: 30</div>
+        <div id="Cell_Container">
+            <div class="row">
+                <div class="cell" id="00"></div>
+                <div class="cell" id="01"></div>
+                <div class="cell" id="02">R</div>
+                <div class="cell" id="03"></div>
+                <div class="cell" id="04"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="10"></div>
+                <div class="cell" id="11"></div>
+                <div class="cell" id="12"></div>
+                <div class="cell" id="13"></div>
+                <div class="cell" id="14"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="20">R</div>
+                <div class="cell" id="21"></div>
+                <div class="cell" id="22">P</div>
+                <div class="cell" id="23"></div>
+                <div class="cell" id="24">R</div>
+            </div>
+            <div class="row">
+                <div class="cell" id="30"></div>
+                <div class="cell" id="31"></div>
+                <div class="cell" id="32"></div>
+                <div class="cell" id="33"></div>
+                <div class="cell" id="34"></div>
+            </div>
+            <div class="row">
+                <div class="cell" id="40"></div>
+                <div class="cell" id="41"></div>
+                <div class="cell" id="42">R</div>
+                <div class="cell" id="43"></div>
+                <div class="cell" id="44"></div>
+            </div>
+        </div>
+
+        <div id="Controls">
+
+            <div id="movementControls">
+                <div></div>
+                <button class="movement" onclick="updatePlayerPosition('UP')">Up</button>
+                <div></div>
+                <button class="movement" onclick="updatePlayerPosition('LEFT')">Left</button>
+                <button class="movement" onclick="updatePlayerPosition('DOWN')">Down</button>
+                <button class="movement" onclick="updatePlayerPosition('RIGHT')">Right</button>
+            </div>
+
+            <div id="actionControls">
+                <button class="action" id="heal">Heal</button>
+                <button class="action" id="attack">Attack</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+</body>
+</html>
