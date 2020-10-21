@@ -50,6 +50,9 @@ function fightMonster(cp){
         }
         index = monsterRooms.indexOf(currPos);
         monsterRooms.splice(index, 1);
+        if (monsterRooms.length == 0){
+            alert('YOU WIN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+        }
         if (!(playerHealth > 0)) alert("YOU LOSE");
     }
 }
